@@ -54,7 +54,7 @@ def job() :
 
 
 
-    print(str(now.strftime("%H:%M:%S")) + ' - USD/TRY Alış: ' + str(dolaralis) + " Satış: " + str(dolarsatis) + " Günlük Fark: " + str(dolarfark)) 
+    print(str(now.strftime("%H:%M")) + ' - USD/TRY Alış: ' + str(dolaralis) + " Satış: " + str(dolarsatis) + " Günlük Fark: " + str(dolarfark)) 
     print('EUR/TRY Alış: ' + str(euroalis) + " Satış: " + str(eurosatis) + " Günlük Fark: " + str(eurofark)) 
 schedule.every(30).minutes.do(job)
 while True:
